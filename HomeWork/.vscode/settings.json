@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.linting.pylintEnabled": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background" : "#1A1A1A",
+        "statusBar.noFolderBackground" : "#212121",
+        "statusBar.debuggingBackground": "#263238"
+    }
