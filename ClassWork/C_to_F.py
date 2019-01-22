@@ -17,12 +17,19 @@
      REVISION: 1.0
 ===============================================================================
 '''
+# Intro to the program the goves instructions
+# on what the program is and what its meant to 
+# do
 def conv_intro():
     print("Welcome to Temp Convertor")
     print("Tell me what temperture in Celsius")
     print("I can convert it to Farenheit")
     print("Let's Go")
 
+# main program where it takes the user input
+# makes sure the the input is within the 
+# allowed value range. Then converts celsius
+# into fahrenheit. 
 def main():
     conv_intro()
     get_cels = float(input('What is the temperture in Celcius: '))
