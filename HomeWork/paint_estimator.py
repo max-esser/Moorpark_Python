@@ -18,11 +18,12 @@
      REVISION: 1.0
 ===============================================================================
 '''
+# Set varibales for feet per gallon, labor hours, and labor charge
 ft_per_gal = 115
 labor_hrs = 8
 labor_charge = 20
 
-
+# Function for user input for squar feet, and paint cost.
 def main():
   sqrFt = int(input("Enter wall space in square feet: "))
   paintCost = float(input("Enter paint price per gallon: "))
@@ -30,6 +31,7 @@ def main():
   
   paint(sqrFt, paintCost)
  
+ # Defined Function for Calculation. 
 def paint(sqrFt, paintCost):
   paintGals = sqrFt / ft_per_gal
   labor = labor_hrs * paintGals
@@ -39,12 +41,13 @@ def paint(sqrFt, paintCost):
   
   totalCost(paintGals, labor, paintCharge, laborCost, total)
   
-  
+# Output fucntion   
 def totalCost(paintGals, labor, paintCharge, laborCost, total): 
   print('Gallons of paint: {0:.0f}'.format(paintGals))
   print('Hours of labor: {0:.0f}'.format(labor))
   print('Paint charges: ${0:.2f}'.format(paintCharge)) 
   print('Labor charges: ${0:.2f}'.format(laborCost))  
   print('Total cost: ${0:.2f}'.format(total))  
-  
+
+# Call main   
 main()
