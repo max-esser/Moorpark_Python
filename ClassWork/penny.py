@@ -29,5 +29,5 @@ print('---     ----------')
 
 for day in range(start, end + 1):
     amount_end = amount_start * 2
-    print('{0}  |   {1}'.format(day, amount_end))
+    print('{0:.2f}  |   {1:.2f}'.format(day, amount_end))
     amount_start = amount_end
